@@ -1,0 +1,118 @@
+body {
+    font-family: cursive;
+    background-image: linear-gradient(pink, violet);
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+    align-items: center;
+  }
+  .theme-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .color-separators {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .dark {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000;
+    cursor: pointer;
+  }
+  .dark-theme {
+    background-image: linear-gradient(#000, #dddd);
+  }
+  .light {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #dddd;
+    cursor: pointer;
+  }
+  .def {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: palevioletred;
+    cursor: pointer;
+  }
+  .title > h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 10px 5px #000;
+  }
+  .parent-container {
+    background-image: linear-gradient(pink, violet);
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-generate > button {
+    padding: 10px;
+    width: 250px;
+    cursor: pointer;
+  }
+  :where(.input-field) > textarea {
+    border-radius: 10px;
+  }
+  :where(.result-field) > textarea {
+    border-radius: 10px;
+  }
+  .input-field {
+    position: relative;
+  }
+  .setting-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+    right: 22.5%;
+  }
+  :where(.setting-container) > small {
+    font-weight: bolder;
+    user-select: none;
+  }
+  :where(.setting-container) > img {
+    cursor: pointer;
+    object-fit: contain;
+  }
+  :where(.setting-container) > img:hover {
+    transform: scale(1.1);
+  }
+  .setting-content {
+    position: absolute;
+    top: 60%;
+    right: 25%;
+    background-color: #dddd;
+    padding: 10px;
+    height: 26vh;
+  }
+  :where(.setting-content) > small {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 5px;
+  }
+  :where(.setting-content) > small:nth-child(1):hover {
+    transform: scale(1.1);
+    color: #fff;
+  }
+  :where(.setting-content) > small:nth-child(2):hover {
+    transform: scale(1.1);
+    color: #fff;
+  }
+  :where(.setting-content) > small:nth-child(3):hover {
+    transform: scale(1.1);
+    color: red;
+  }

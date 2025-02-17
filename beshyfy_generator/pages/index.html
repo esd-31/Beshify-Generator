@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BESHIFY GENERATOR</title>
+    <link rel="stylesheet" href="../stylesheets/index.css" />
+    <script src="../scripts/index.js" defer></script>
+  </head>
+  <body>
+    <div class="parent-container" id="parent-index">
+      <div class="container">
+        <div class="title">
+          <h1>BESHIFY APP GENERATOR</h1>
+          <div class="theme-container">
+            <h2>CHANGE THEME BG</h2>
+            <div class="color-separators">
+              <div class="dark"></div>
+              <div class="light"></div>
+              <div class="def"></div>
+            </div>
+          </div>
+        </div>
+        <div class="input-field">
+          <textarea id="input-text" cols="60" rows="15"></textarea>
+        </div>
+        <div class="setting-container">
+          <img
+            src="https://img.icons8.com/?size=1x&id=4511GGVppfIx&format=png"
+            id="setting-function"
+          />
+          <small>SETTING TOOLS</small>
+        </div>
+        <div class="setting-content" id="toggle-setting" style="display: none">
+          <small id="select-all">SELECT ALL</small>
+          <small>COPY</small>
+          <small onclick="removeFunction()">REMOVE</small>
+          <small id="esc">ESC</small>
+        </div>
+        <div class="result-field">
+          <textarea id="result-info" cols="60" rows="15" disabled></textarea>
+        </div>
+        <div class="btn-generate">
+          <button id="generate" disabled>GENERATE</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
